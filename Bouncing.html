@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+    <style type="text/css" media="all">
+      body {
+        width: 100%;
+        height: 100vh;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bounce{
+        width: 100px;
+        height: 100px;
+        background:;
+        display: flex;
+        align-items: flex-end;
+      }
+      .b{
+        animation: ro .5s infinite alternate;
+        width: 25px;
+        height: 25px;
+        background: cyan;
+        border-radius: 50%;
+      }
+      .b2{
+        animation-delay: .1s;
+        opacity: .9;
+      }
+      .b3{
+        animation-delay: .2s;
+        opacity: .6;
+      }
+      .b4{
+        animation-delay: .3s;
+        opacity: .3;
+      }
+      @keyframes ro{
+        from{
+          transform: translateY(0px);
+        }
+        to{
+          transform: translateY(-100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bounce">
+      <div class="b b1"></div>
+      <div class="b b2"></div>
+      <div class="b b3"></div>
+      <div class="b b4"></div>
+    </div>
+  </body>
+</html>
